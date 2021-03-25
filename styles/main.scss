@@ -136,6 +136,8 @@ section.features-section {
 ul.features-list {
     margin: 0;
     padding-left: 0.1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     
     li {
         font-size: 1.1em;
@@ -274,7 +276,21 @@ iframe {
             }
         }
     }
+}
 
-    
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
 
+    section {
+        padding: 10em 4em;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
 }
