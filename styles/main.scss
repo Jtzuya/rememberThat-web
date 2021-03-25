@@ -109,7 +109,7 @@ main {
         color: white;
         border-radius: 5em;
         padding: 0.6em 1.3em;
-        font-size: 1.4em;
+        font-size: 1.2em;
         display: inline-block;
         text-decoration: none;
     }
@@ -292,5 +292,121 @@ iframe {
         display: flex;
         justify-content: space-between;
         text-align: left;
+    
+        .left-col {
+            margin: 3em 3em 0 5em;
+        
+            h1 {
+                font-size: 3em;
+                width: 90%;
+            }
+        }
     }
+
+    .hero-img {
+        margin-right: 8em;
+    }
+
+    .cta {
+        display: flex;
+        margin-right: 1em;
+    }
+
+    .primary-cta {
+        margin-right: 1em;
+        padding: 0.3em .2em;
+    }
+
+    ul.features-list {
+        display: block;
+        margin-left: 10em;
+
+        li {
+            font-size: 1.4em;
+
+            &:before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .features-section {
+        position: relative;
+
+        img {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 350px;
+            bottom: -2em;
+        }
+    }
+
+    .testimonials-section ul {
+        display: flex;
+
+        li {
+            margin: 0 1em;
+        }
+    }
+
+    .contact-section {
+        position: relative;
+
+        .container {
+            display: flex;
+        }
+    }
+
+    .contact-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+        
+        iframe {
+            height: 100%;
+        }
+    }
+
+    .features-section {
+        
+        &:before {
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 20em;
+            background: $secondary-color;
+            left: 0;
+            top: -4em;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 145px;
+            height: 7em;
+            background: url(../images/dots.svg);
+            left: 1.5em;
+            top: 2em;
+            background-size: contain;
+        }
+    }
+
 }
+
+// @media only screen and (min-width: 1450px) {
+//     .features-section {
+        
+//         &:before {
+//             content: '';
+//             position: absolute;
+//             width: 10%;
+//             height: 20em;
+//             background: $secondary-color;
+//             left: 0;
+//             top: -4em;
+//         }
+//     }
+// }
